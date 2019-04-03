@@ -7,7 +7,7 @@ import setup.PropertyFile;
 
 public class Hooks extends DriverSetup {
 
-    //protected Hooks(){ super(); }
+    protected Hooks(){ super(); }
 
     @BeforeSuite(groups = "native", description = "Prepare driver to run native test(s)")
     public void setUpNative() throws Exception {
@@ -22,8 +22,8 @@ public class Hooks extends DriverSetup {
     }
 
     @AfterSuite(groups = {"native", "web"}, description = "Close driver on all tests' completion")
-    public void tearDown() {
-        driver.quit();
+    public void tearDown() throws Exception {
+        driver().quit();
         System.out.println("Driver is closed");
     }
 }

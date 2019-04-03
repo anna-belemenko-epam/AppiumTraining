@@ -1,4 +1,7 @@
-C:\AppiumTraining\src\main\java\Hooks\Hooks.java
-C:\AppiumTraining\src\main\java\setup\DriverSetup.java
-C:\AppiumTraining\src\main\java\setup\PropertyFile.java
-C:\AppiumTraining\src\main\java\setup\TestProperties.java
+C:\Appium1\AppiumTraining\src\main\java\Utils\ADBCommands.java
+C:\Appium1\AppiumTraining\src\main\java\Hooks\Hooks.java
+C:\Appium1\AppiumTraining\src\main\java\nativePages\SetAPasswordPage.java
+C:\Appium1\AppiumTraining\src\main\java\setup\PropertyFile.java
+C:\Appium1\AppiumTraining\src\main\java\setup\DriverSetup.java
+C:\Appium1\AppiumTraining\src\main\java\Utils\ADBCommandUtils.java
+C:\Appium1\AppiumTraining\src\main\java\setup\TestProperties.java

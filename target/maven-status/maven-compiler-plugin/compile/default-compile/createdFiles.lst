@@ -1,4 +1,7 @@
+Utils\ADBCommandUtils.class
 Hooks\Hooks.class
+Utils\ADBCommands.class
 setup\TestProperties.class
 setup\DriverSetup.class
 setup\PropertyFile.class
+nativePages\SetAPasswordPage.class

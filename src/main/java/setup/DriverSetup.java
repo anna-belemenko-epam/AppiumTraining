@@ -17,6 +17,7 @@ public class DriverSetup extends TestProperties {
     protected static String SUT;
     protected static String TEST_PLATFORM;
     protected static String DRIVER;
+    protected static String DEVICE_NAME;
 
     private static AppiumDriver driverSingle = null;
     private static WebDriverWait waitSingle;
@@ -41,10 +42,11 @@ public class DriverSetup extends TestProperties {
         SUT = t_sut == null ? null : "http://" + t_sut;
         TEST_PLATFORM = getProperty("platform");
         DRIVER = getProperty("driver");
+        DEVICE_NAME = getProperty("deviceName");
         capabilities = new DesiredCapabilities();
         String browserName;
         if ("Android".equals(TEST_PLATFORM)) {
-            capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, getProperty("deviceName"));
+            capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, DEVICE_NAME);
             browserName = "Chrome";
         } else if ("iOS".equals(TEST_PLATFORM)){
             browserName = "Safari";
